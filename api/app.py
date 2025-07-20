@@ -19,7 +19,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 
 # Configure CORS
-CORS(app, resources={r"/api/*": {"origins": "https://basicfront-three.vercel.app/"}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": "https://basicfront-three.vercel.app"}}, supports_credentials=True)
 
 db = SQLAlchemy(app)
 
